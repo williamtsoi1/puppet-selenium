@@ -19,7 +19,7 @@ class selenium::node(
 
   anchor { 'selenium::node::begin': } ->
   Class[ 'selenium' ] ->
-  selenium::config{ 'node':
+  selenium::nodeconfig{ 'node':
     display      => $display,
     user         => $selenium::user,
     group        => $selenium::group,
