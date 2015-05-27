@@ -5,7 +5,7 @@
 #
 class selenium::params {
   $display          = ':0'
-  $user             = 'selenium'
+  $user             = 'root'
   $manage_user      = true
   $group            = $user
   $manage_group     = true
