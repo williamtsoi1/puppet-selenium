@@ -30,7 +30,7 @@ define selenium::nodeconfig(
   # prog is the 'name' of the init.d script.
   $prog = "selenium${name}"
 
-  file { 'init-script':
+  file { 'node-init-script':
     ensure  => 'file',
     path    => "/etc/init.d/${prog}",
     owner   => 'root',
